@@ -86,7 +86,7 @@ end
 
 if mods["Dectorio"] and mods["electric-tiles"] and DECT.ENABLED["painted-concrete"] and DECT.ENABLED["item-group"] and settings.startup["DDpainted-variants"].value and settings.startup["DDelectric-painted-variants"].value then
     for _, rainbow in ipairs({"hazard", "emergency", "radiation", "safety", "caution", "danger", "defect", "operations"}) do
-        local name = "F077ET-"..rainbow.."-mooncrete"
+        local name = "F077ET-dect-paint-"..rainbow.."-mooncrete"
         for _, type in ipairs({"item", "recipe"}) do
             local organizer = data.raw[type][name]
         if organizer then organizer.subgroup = "flooring-electric-hazard-mooncrete" end
@@ -94,7 +94,7 @@ if mods["Dectorio"] and mods["electric-tiles"] and DECT.ENABLED["painted-concret
     end
 
     for _, myriad in ipairs({"hazard", "emergency", "radiation", "safety", "caution", "danger", "defect", "operations"}) do
-        local nombre = "F077ET-dect-paint-refined"..myriad.."-mooncrete"
+        local nombre = "F077ET-dect-paint-refined-"..myriad.."-mooncrete"
         for _, cat in ipairs({"item", "recipe"}) do
             local arrayer = data.raw[cat][nombre]
         if arrayer then arrayer.subgroup = "flooring-electric-hazard-refined-mooncrete" end
@@ -109,10 +109,10 @@ if mods["Dectorio"] and mods["electric-tiles"] and DECT.ENABLED["painted-concret
         end
     end
 
-    data.raw["recipe"]["F077ET-hazard-mooncrete"].subgroup = "flooring-hazard-mooncrete"
-    data.raw["item"]["F077ET-hazard-mooncrete"].subgroup = "flooring-hazard-mooncrete"
-    data.raw["recipe"]["F077ET-refined-hazard-mooncrete"].subgroup = "flooring-hazard-refined-mooncrete"
-    data.raw["item"]["F077ET-refined-hazard-mooncrete"].subgroup = "flooring-hazard-refined-mooncrete"
+    data.raw["recipe"]["F077ET-hazard-mooncrete"].subgroup = "flooring-electric-hazard-mooncrete"
+    data.raw["item"]["F077ET-hazard-mooncrete"].subgroup = "flooring-electric-hazard-mooncrete"
+    data.raw["recipe"]["F077ET-refined-hazard-mooncrete"].subgroup = "flooring-electric-hazard-refined-mooncrete"
+    data.raw["item"]["F077ET-refined-hazard-mooncrete"].subgroup = "flooring-electric-hazard-refined-mooncrete"
     data.raw["recipe"]["F077ET-hazard-concrete"].subgroup = "F077ET-terrain-dect-hazards"
     data.raw["item"]["F077ET-hazard-concrete"].subgroup = "F077ET-terrain-dect-hazards"
     data.raw["recipe"]["F077ET-refined-hazard-concrete"].subgroup = "F077ET-terrain-dect-refined-hazards"
