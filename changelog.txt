@@ -1,0 +1,22 @@
+---------------------------------------------------------------------------------------------------
+Version: 2.0
+Date: 2026.10.6
+    Features:
+    - Reworked the mod around walking/driving speed. Balanced against the muluna speed debuff but changeable in settings
+    - To accommodate the above, Dectorio tiles, concrete, and refined concrete variants are now forbidden from Muluna.
+    - To accommodate that accommodation, there are optional Muluna variants of Dectorio gravel/wooden floorboards
+    - Reverted to crafting because smelters don't do what I wanted them too. Oops. Now uses steam in assemblers to imply sintering without being nonfunctional.
+    - Rebalanced recipe to make native creation of mooncrete more attractive than concrete
+    - Iterator to create alt recipes for anything that contains concrete/refined concrete at +25% mooncrete/refined mooncrete cost
+    - Added individual unlock techs instead of inserting into pre-existing Muluna techs
+    - Added hazard mooncrete/hazard refined mooncrete
+    - Patch for dectorio flooring
+    - Added alumina gravel with Dectorio gravel on
+    - If gravel variants is added, replaces Muluna crushed-gravel as its own "regolith gravel" item
+    - Patch for electrified tiles
+    - Patch for crushing industry
+    - Settings, more settings with Dectorio and/or Electric Tiles installed
+---------------------------------------------------------------------------------------------------
+Version: 1.0.3
+Date: 2025.08
+    - Initial release

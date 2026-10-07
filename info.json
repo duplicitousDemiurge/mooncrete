@@ -1,0 +1,16 @@
+{
+"name": "mooncrete",
+"version": "2.0.0",
+"title": "Mooncrete and Lunar Asphalt",
+"author": "duplicitousDemiurge",
+"dependencies": [
+    "base >= 2.0.0", 
+    "space-age",
+    "planet-muluna",
+    "? AsphaltRoadsPatched",
+    "? Dectorio",
+    "? electric-tiles"
+],
+"description": "A small add-on for Muluna that adds new mooncrete and refined mooncrete tiles, as well as an alternate asphalt-from-bitumen recipe if you have that mod installed.",
+"factorio_version": "2.0"
+}
